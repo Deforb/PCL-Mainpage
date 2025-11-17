@@ -1,11 +1,11 @@
-<local:MyCard Margin="0,0,0,12" Title="快捷方式" CanSwap="True" IsSwaped="False">
+﻿<local:MyCard Margin="0,0,0,12" Title="快捷方式" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="24,40,24,15">
           <Grid>
                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="打开游戏日志" EventType="打开文件" EventData="E:\Game\.minecraft\versions\1.21-Fabric 0.16.10\logs\latest.log" ToolTip="查看最新的游戏日志文件。"/>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="打开游戏日志" EventType="打开文件" EventData="E:\Game\.minecraft\versions\1.21-Fabric 0.17.2\logs\latest.log" ToolTip="查看最新的游戏日志文件。"/>
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="打开 PCL 主页配置文件" EventType="打开文件" EventData="Custom.xaml" />
           </Grid>
           <Grid>
@@ -14,7 +14,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="打开 PCL 文件夹" EventType="打开文件" EventData="explorer|."/>
-               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="打开存档文件夹" EventType="打开文件"  EventData="explorer|E:\Game\.minecraft\versions\1.21-Fabric 0.16.10\saves" ToolTip="1.21-Fabric 0.16.10\saves"/>
+               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="打开存档文件夹" EventType="打开文件"  EventData="explorer|E:\Game\.minecraft\versions\1.21-Fabric 0.17.2\saves" ToolTip="1.21-Fabric 0.17.2\saves"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
@@ -57,13 +57,14 @@
 
 <local:MyCard Margin="0,0,0,12" Title="网页资源" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="20,40,20,15">
+          <local:MyListItem Margin="-2,0,0,0" Logo="PCL\Wiki.webp" Title="中文Minecraft Wiki" Info="最详细的我的世界百科" EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />          
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文Mod百科" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://static.hdslb.com/images/favicon.ico" Title="收藏夹" Info="B站MC收藏夹" EventType="打开网页" EventData="https://space.bilibili.com/399910545/favlist?fid=726875745&amp;ftype=create" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/blocks/Anvil.png" Title="Curseforge" Info="The Home for the Best Minecraft Mods" EventType="打开网页" EventData="https://www.curseforge.com/minecraft" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://modrinth.com/favicon.ico" Title="Modrinth" Info="Discover, play, and share Minecraft content through our open-source platform built for the community." EventType="打开网页" EventData="https://modrinth.com/" Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/Grass.png"
                Title="Minecraft官网" Info="Minecraft国际版官网" EventType="打开网页" EventData="https://www.minecraft.net" Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="网易我的世界官网" Info="我的世界中国版官网" EventType="打开网页" EventData="https://mc.163.com/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文Mod百科" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="PCL\Wiki.webp" Title="中文Minecraft Wiki" Info="最详细的我的世界百科" EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/blocks/Anvil.png" Title="Curseforge" Info="The Home for the Best Minecraft Mods" EventType="打开网页" EventData="https://www.curseforge.com/minecraft" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://modrinth.com/favicon.ico" Title="Modrinth" Info="Discover, play, and share Minecraft content through our open-source platform built for the community." EventType="打开网页" EventData="https://modrinth.com/" Type="Clickable" />
      </StackPanel>
 </local:MyCard>
 
